@@ -67,6 +67,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            position: relative;
         }
 
         .logo {
@@ -349,6 +350,65 @@
             color: var(--primary);
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--accent);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Ad */
+        .mobile-ad {
+            display: none;
+            background-color: var(--bg-card);
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Responsive Banner Ad */
+        .banner-ad {
+            background-color: var(--bg-card);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        @media (max-width: 768px) {
+            .banner-ad {
+                padding: 0.5rem;
+            }
+
+            .banner-ad iframe {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 1024px) {
             .sidebar-left, .sidebar-right {
@@ -362,7 +422,28 @@
             }
 
             nav ul {
+                display: none;
                 gap: 1rem;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: var(--secondary);
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .hamburger {
+                display: flex;
             }
 
             .main-content {
@@ -380,6 +461,10 @@
             .features-grid {
                 grid-template-columns: 1fr;
             }
+
+            .mobile-ad {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -388,13 +473,18 @@
     <header>
         <nav>
             <a href="/" class="logo">🎮 Minecraft Patch Download</a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/download-details.html">Download</a></li>
-                <li><a href="/about-us.html">About Us</a></li>
-                <li><a href="/contact-us.html">Contact Us</a></li>
-                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="/" onclick="closeMenu()">Home</a></li>
+                <li><a href="/blog.html" onclick="closeMenu()">Blog</a></li>
+                <li><a href="/download-details.html" onclick="closeMenu()">Download</a></li>
+                <li><a href="/about-us.html" onclick="closeMenu()">About Us</a></li>
+                <li><a href="/contact-us.html" onclick="closeMenu()">Contact Us</a></li>
+                <li><a href="/privacy-policy.html" onclick="closeMenu()">Privacy Policy</a></li>
             </ul>
         </nav>
     </header>
@@ -525,6 +615,20 @@
 
             <div class="highlight-box">
                 <strong>📖 Need Help?</strong> Check our <a href="/how-to-download-minecraft-patch.html">complete download guide</a> for step-by-step instructions on how to download minecraft patch.
+            </div>
+
+            <!-- Mobile Ad (300x250) -->
+            <div class="mobile-ad">
+                <script>
+                  atOptions = {
+                    'key' : '1b4d620c3fc6e922c60f64d3efe6910f',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://ownerproductionsairport.com/1b4d620c3fc6e922c60f64d3efe6910f/invoke.js"></script>
             </div>
 
             <!-- User's Article Content -->
@@ -742,6 +846,33 @@
                 window.location.href = officialLink;
             }, 3000);
         }
+
+        // Hamburger Menu Toggle
+        function toggleMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const nav = document.querySelector('nav');
+            
+            if (!nav.contains(event.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
