@@ -1,0 +1,38 @@
+# Minecraft Patch Download - ads.txt
+# Authorized Digital Sellers Configuration
+# Last Updated: April 25, 2026
+
+# Google AdSense
+# Replace YOUR_PUBLISHER_ID with your actual Google AdSense Publisher ID
+google.com, pub-YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
+
+# Adsterra
+# Adsterra Publisher Configuration
+adsterra.com, YOUR_ADSTERRA_PUBLISHER_ID, DIRECT
+
+# OpenX
+# Replace YOUR_OPENX_ID with your actual OpenX account ID
+openx.com, YOUR_OPENX_ID, DIRECT, 6a698e2ec38604c6
+
+# Rubicon Project
+# Replace YOUR_RUBICON_ID with your actual Rubicon Project account ID
+rubiconproject.com, YOUR_RUBICON_ID, DIRECT, 0bfd66d529a55807
+
+# AppNexus
+# Replace YOUR_APPNEXUS_ID with your actual AppNexus account ID
+appnexus.com, YOUR_APPNEXUS_ID, DIRECT, f5ab79cb980f11d1
+
+# Criteo
+criteo.com, YOUR_CRITEO_ID, DIRECT, bf7bd3b741d944a8
+
+# Sonobi
+sonobi.com, YOUR_SONOBI_ID, DIRECT, d38a6c68e7c82e61
+
+# Conversant
+conversantmedia.com, YOUR_CONVERSANT_ID, DIRECT, 03113cd04947b4e0
+
+# Media.net
+media.net, YOUR_MEDIA_NET_ID, DIRECT
+
+# Conversant (Reseller)
+conversantmedia.com, YOUR_CONVERSANT_RESELLER_ID, RESELLER, 03113cd04947b4e0
