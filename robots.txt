@@ -1,0 +1,33 @@
+# Minecraft Patch Download - robots.txt
+# Search Engine Crawling Rules
+
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+
+# Disallow private/admin pages (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://minecraft-patch-download.com/sitemap.xml
+
+# Comment: This robots.txt allows all search engines to crawl the website
+# while respecting crawl delays for server performance
