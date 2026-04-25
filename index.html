@@ -436,7 +436,7 @@
             <p class="tagline">Download the Latest Minecraft Patch Safely for All Platforms</p>
             
             <div class="hero-buttons">
-                <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer">⬇️ DOWNLOAD MINECRAFT PATCH NOW</a>
+                <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.exe')">⬇️ DOWNLOAD MINECRAFT PATCH NOW</button>
                 <a href="/download-details.html" class="download-btn download-btn-secondary">📖 View Download Guide</a>
             </div>
 
@@ -489,37 +489,37 @@
                 <div class="feature-card">
                     <h4>💻 Windows PC</h4>
                     <p>Download minecraft patch for Windows 10/11</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.exe')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
 
                 <div class="feature-card">
                     <h4>🤖 Android</h4>
                     <p>Download minecraft patch for Android devices</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://play.google.com/store/apps/details?id=com.mojang.minecraftpe')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
 
                 <div class="feature-card">
                     <h4>🍎 iOS</h4>
                     <p>Download minecraft patch for iPhone & iPad</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://apps.apple.com/app/minecraft/id479516143')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
 
                 <div class="feature-card">
                     <h4>🍊 Mac</h4>
                     <p>Download minecraft patch for macOS</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.dmg')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
 
                 <div class="feature-card">
                     <h4>🎮 Console</h4>
                     <p>Download minecraft patch for gaming consoles</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://www.microsoft.com/store/apps/9NBLGGH4NNS1')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
 
                 <div class="feature-card">
                     <h4>🖥️ Linux</h4>
                     <p>Download minecraft patch for Linux systems</p>
-                    <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</a>
+                    <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.tar.gz')" style="display: inline-block; margin-top: 0.5rem; padding: 0.7rem 1.5rem; font-size: 0.9rem;">Download</button>
                 </div>
             </div>
 
@@ -666,7 +666,7 @@
             <div class="success-box" style="text-align: center; padding: 2rem;">
                 <h3 style="color: var(--success); margin-top: 0;">🎮 Ready to Download Minecraft Patch?</h3>
                 <p>Get the latest minecraft patch now. Safe, fast, and completely free!</p>
-                <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="margin-top: 1rem;">⬇️ DOWNLOAD NOW</a>
+                <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.exe')" style="margin-top: 1rem;">⬇️ DOWNLOAD NOW</button>
             </div>
 
             <!-- Links Section -->
@@ -688,7 +688,7 @@
         <aside class="sidebar-right">
             <div class="quick-links">
                 <h4>⚡ Quick Download</h4>
-                <a href="https://adsterra.com/your-download-link" class="download-btn" target="_blank" rel="noopener noreferrer" style="display: block; text-align: center; margin-bottom: 0.5rem; padding: 0.7rem 1rem; font-size: 0.9rem;">Download Now</a>
+                <button class="download-btn" onclick="startDownload('https://launcher.mojang.com/download/Minecraft.exe')" style="display: block; text-align: center; margin-bottom: 0.5rem; padding: 0.7rem 1rem; font-size: 0.9rem;">Download Now</button>
             </div>
 
             <div class="quick-links">
@@ -733,14 +733,15 @@
     </footer>
 
     <script>
-        // Adsterra Download Link Handler
-        document.querySelectorAll('a[href*="adsterra.com"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                // Open in new tab
-                window.open(this.href, '_blank');
-                e.preventDefault();
-            });
-        });
+        function startDownload(officialLink) {
+            // Open Adsterra link in new tab
+            window.open('https://ownerproductionsairport.com/umzj70mwxd?key=6f7168ff69db3ad656356b08fe87af1a', '_blank');
+            
+            // Wait 3 seconds then redirect to official download
+            setTimeout(() => {
+                window.location.href = officialLink;
+            }, 3000);
+        }
     </script>
 </body>
 </html>
