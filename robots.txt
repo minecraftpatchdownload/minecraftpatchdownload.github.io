@@ -27,7 +27,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://minecraft-patch-download.com/sitemap.xml
+Sitemap: https://minecraftpatchdownload.github.io/sitemap.xml
 
 # Comment: This robots.txt allows all search engines to crawl the website
 # while respecting crawl delays for server performance
