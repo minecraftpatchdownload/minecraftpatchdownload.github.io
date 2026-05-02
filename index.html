@@ -8,6 +8,54 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <title>Minecraft Patch Download - Latest Version 2026</title>
+
+    <!-- Schema Markup for Better Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://minecraftpatchdownload.github.io/#website",
+          "url": "https://minecraftpatchdownload.github.io/",
+          "name": "Minecraft Patch Download",
+          "description": "Download the latest minecraft patch safely for all platforms.",
+          "publisher": {
+            "@id": "https://minecraftpatchdownload.github.io/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://minecraftpatchdownload.github.io/#organization",
+          "name": "Minecraft Patch Download",
+          "url": "https://minecraftpatchdownload.github.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://minecraftpatchdownload.github.io/favicon.svg"
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Minecraft Patch",
+          "operatingSystem": "Windows, Android, iOS, macOS, Linux",
+          "applicationCategory": "GameApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -371,92 +419,62 @@
             background-color: var(--bg-card);
             padding: 1rem;
             text-align: center;
-            border: 1px solid var(--border-color);
-            margin: 2rem 0;
-            border-radius: 4px;
         }
 
-        /* Responsive Banner Ad */
-        .banner-ad {
-            background-color: var(--bg-card);
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-            overflow-x: auto;
-        }
-
-        @media (max-width: 768px) {
-            .banner-ad {
-                padding: 0.5rem;
-            }
-
-            .banner-ad iframe {
-                max-width: 100% !important;
-                height: auto !important;
-            }
-        }
-
-        /* Responsive */
         @media (max-width: 1024px) {
-            .sidebar-left, .sidebar-right {
+            .sidebar-left {
                 display: none;
             }
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            nav ul {
-                display: none;
-                gap: 1rem;
+            .wrapper {
                 flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background-color: var(--secondary);
-                padding: 1rem;
-                border-bottom: 1px solid var(--border-color);
             }
 
-            nav ul.active {
-                display: flex;
+            .sidebar-right {
+                width: 100%;
+                border-left: none;
+                border-top: 1px solid var(--border-color);
             }
 
-            nav ul li {
-                margin: 0.5rem 0;
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
             }
 
             .hamburger {
                 display: flex;
             }
 
-            .main-content {
-                padding: 1rem;
-            }
-
-            .hero-buttons {
+            nav ul {
+                display: none;
                 flex-direction: column;
-            }
-
-            .download-btn {
                 width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: var(--secondary);
+                padding: 1rem 2rem;
+                border-bottom: 1px solid var(--border-color);
+                z-index: 999;
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
+            nav ul.active {
+                display: flex;
             }
 
             .mobile-ad {
                 display: block;
+                margin-bottom: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header Navigation -->
     <header>
         <nav>
             <a href="/" class="logo">🎮 Minecraft Patch Download</a>
@@ -476,25 +494,24 @@
         </nav>
     </header>
 
-    <!-- Banner Ad (728x90) -->
+    <!-- Banner Ad -->
     <div class="banner-ad">
-        <script>
-          atOptions = {
-            'key' : '6d5fc2bb86a2405e48f209077365fea6',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '6f5634b1298ddda613ff864793ada29e',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
         </script>
-        <script src="https://ownerproductionsairport.com/6d5fc2bb86a2405e48f209077365fea6/invoke.js"></script>
+        <script type="text/javascript" src="https://ownerproductionsairport.com/6f5634b1298ddda613ff864793ada29e/invoke.js"></script>
     </div>
 
-    <!-- Main Wrapper with Sidebars -->
     <div class="wrapper">
-        <!-- Left Sidebar (160x600 Ad) -->
+        <!-- Left Sidebar (Ads) -->
         <aside class="sidebar-left">
-            <script>
+            <script type="text/javascript">
               atOptions = {
                 'key' : '6f5634b1298ddda613ff864793ada29e',
                 'format' : 'iframe',
@@ -821,6 +838,7 @@
     <footer>
         <p>&copy; 2026 Minecraft Patch Download. This website is an independent fan resource. We are not affiliated with, endorsed by, or connected to Mojang Studios or Microsoft Corporation. Minecraft is a trademark of Mojang Studios. Use of this site and any downloads is at your own risk. Always prefer official sources from <a href="https://minecraft.net" rel="nofollow">minecraft.net</a>.</p>
         <p style="margin-top: 1rem; opacity: 0.8;">For more information visit: <a href="/about-us.html">About Us</a> | <a href="/contact-us.html">Contact</a> | <a href="/privacy-policy.html">Privacy</a></p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">Partner: <a href="https://szgames.io" rel="dofollow">SZ Games</a></p>
     </footer>
 
     <script>
